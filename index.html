@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container flex bg-black">
+        <!-- left part / section  -->
+        <div class="left">
+            <!-- close section  -->
+            <div class="close invert ">
+                <img src="./close3.png" alt="" style="height:30px; width: 30px;">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <!-- logo  -->
+                <img src="./pngwing.com.png" alt="" class="logo flex">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i> Home</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-black bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img src="./books30.png" class="invert" alt="">
+                    <h3>
+                        Your Library
+                    </h3>
+                </div>
+
+                <div class="songlist">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-music musicicon "></i>
+                            <div class="info">
+                                <!-- <div>Song Name</div>
+                                <div>Artist Name</div> -->
+                            </div>
+                            <img class="playnow invert"
+                                src="https://e7.pngegg.com/pngimages/170/341/png-clipart-computer-icons-encapsulated-postscript-play-now-button-angle-text-thumbnail.png"
+                                alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/legal/cookies-policy/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/legal/cookies-policy/"><span>Privacy Centre</span></a></div>
+                    <div><a href="https://www.spotify.com/legal/cookies-policy/"><span>Privacy Policies</span></a></div>
+                    <div><a href="https://www.spotify.com/legal/cookies-policy/"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/legal/cookies-policy/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- right part/ section  -->
+        <div class="right bg-grey rounded p-1">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburger invert">
+                        <img src="./hamburger.png" alt="" style="height: 20px">
+                    </div>
+                    <i class="fa-solid fa-less-than  " id="smallerthan"></i>
+                    <i class="fa-solid fa-greater-than " id="greaterthan"></i>
+                </div>
+                <div class="button">
+                    <button class="signup-btn">Sign up</button>
+                    <button class="login-btn">Log in</button>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h1 class="spotify flex " style="cursor: pointer;">
+                    Spotify Playlists
+                    
+                    <div class="volume flex gapping justify-content items-centre scroll">
+                        <i class="fa-solid fa-volume-high" style="height: 40px; margin-left: 25vw; "></i>
+                        <div class="range">
+                            <input type="range" name="volume" id="">
+                        </div>
+                        <!-- <img  src="./speaker2.jpeg"  alt="" style="height: 40px;margin-left: 20vw;"> -->
+                    </div>
+                    <!-- --------------------- -->
+                    <!-- Add this search input field and button in your HTML -->
+                    <!-- <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search songs...">
+                        <button id="searchButton">Search</button>
+                    </div> -->
+                    <!-- ------------------------------ -->
+                </h1>
+
+                <!-- cards 1 -->
+                <div class="card-container">
+                    <div class="cards " data-folder="Favourites">
+                        <div class="play ">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img
+                            src="https://mosaic.scdn.co/300/ab67616d00001e0254e544672baa16145d67612bab67616d00001e027037561f1e7a2c5ff3cd0a38ab67616d00001e0290853ed444266d1d2bb55c28ab67616d00001e02fe77bd21eb38ff74b5f21524">
+                        <h2>Favourites 🖇</h2>
+                        <p>Listen to your Favourite soundtrack 🐼</p>
+                    </div>
+                    <!-- cards 2 -->
+                    <div class="cards" data-folder="English">
+                        <div class="play inherit" data-folder="Favourites">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img
+                            src="https://mosaic.scdn.co/300/ab67616d00001e0253a2e11c1bde700722fecd2eab67616d00001e025ebe6cbd74a47a5e8ea88985ab67616d00001e02806c160566580d6335d1f16cab67616d00001e0297e971f3e53475091dc8d707">
+                        <h2>English Playlist</h2>
+                        <p>All the Trending English songs are here ⚡️</p>
+                    </div>
+                    <!-- cards 3 -->
+                    <div class="cards">
+                        <div class="play inherit ">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000027e858e4098c8a256ca51d770
+                        ">
+                        <h2>Lofi Sleep</h2>
+                        <p>Instrumental beats for a restful night's sleep</p>
+                    </div>
+                    <!-- cards 4 -->
+                    <div class="cards">
+                        <div class="play inherit ">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000028998614b3281e12596844039">
+                        <h2>Night Rain</h2>
+                        <p>Sleep with sounds of pouring rain and occasional rolling thunder.</p>
+                    </div>
+                    <!-- cards 5 -->
+                    <div class="cards">
+                        <div class="play inherit ">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d2291e0c5d43a1b21a941031">
+                        <h2>Day Dreamer</h2>
+                        <p>Drift away with enthralling instrumentals.</p>
+                    </div>
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+                            <!-- --------  -->
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="songtime" style="font-size: 20px;">
+                            <!-- ----------  -->
+                        </div>
+
+                        <div class="songs-button">
+                            <!-- prev button  -->
+                            <i id="previous" class="fa-solid fa-backward-step "></i>
+
+                            <!-- playbutton -->
+                            <div id="play" class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+
+                            <!-- forward -->
+                            <i id="next" class="fa-solid fa-forward-step"></i>
+                        </div>
+                        <div class="songinfo" style="font: size 19px">
+                            <!-- --------  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- java script  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
